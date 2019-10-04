@@ -13,11 +13,6 @@ from flask_mail import Message
 def home():
     return render_template('home.html')
 
-@app.route("/whatever")
-    def act():
-        return "hello world"
-
-
 
 @app.route("/studentlogin", methods=['GET', 'POST'])
 def studentlogin():
